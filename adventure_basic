@@ -1,0 +1,44 @@
+#!/usr/bin/env python3
+"""
+THIS IS MY STORY, SECTION 1 BELOW...
+"""
+import colors as c
+import time
+while True:
+    name = input(c.green + "Hello, Thou Name Shall Be Called What??? ")
+    print("Hello, Thou Mighty " + name + "!")
+    time.sleep(1)
+    print("You Thou in the House Of Terrors, What shall thou do????")
+    time.sleep(1)
+    print("(A), You can be brave and keep walking in the house...")
+    time.sleep(1)
+    print("or (B), You will not be brave and run away from thou house...")
+    choose = input("What Do Thou Choose To Do??? ").strip().lower()
+
+    if "b" in choose:
+        print("You ran out of the house...")
+        for count in range(3):
+            time.sleep(1)
+            print("...")
+        time.sleep(1)
+        print("Uhoh you hear whispering in the winds.... ")
+        for count in range(3):
+            time.sleep(1)
+            print("...")
+        time.sleep(1)
+        print("You look behind thouself, and you find Death behind you!!!")
+        for count in range(1):
+            time.sleep(1)
+            print('...')
+            time.sleep(1)
+        print('All you remember is that you got murdered by Death.....')
+        retry = input('Retry??? ').strip().lower()
+        if 'n' in retry:
+            print('Ok')
+            break
+        elif 'y' in retry:
+            print('Ok!!!')
+            time.sleep(1)
+        else:
+            print('.....')
+            break
