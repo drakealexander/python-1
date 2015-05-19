@@ -4,26 +4,29 @@ import time
 print(c.clear)
 while True:
     for count in range(12):
-        print('Badgers! ')
-        time.sleep(0.5)
+        print(c.red + 'Badgers! ')
+        time.sleep(0.3)
     for count1 in range(2):
-        print('Mushroom')
-        time.sleep(0.5)
+        print(c.orange + 'Mushroom')
+        time.sleep(0.8)    
     print(c.clear)
     for count in range(12):
-        print('Badgers! ')
-        time.sleep(0.5)
+        print(c.yellow + 'Badgers! ')
+        time.sleep(0.3)
     for count1 in range(2):
-        print('Mushroom')
-        time.sleep(0.5)
+        print(c.green + 'Mushroom')
+        time.sleep(0.8)
     print(c.clear)
     for count in range(12):
-        print('Badgers! ')
-        time.sleep(0.5)
+        print(c.blue + 'Badgers! ')
+        time.sleep(0.3)
     for count1 in range(2):
-        print('Mushroom')
-        time.sleep(0.5)
+        print(c.violet + 'Mushroom')
+        time.sleep(0.8)
+        print(c.red + 'SNAAAAAAAAAAAAAAAAAAAAAAAKE!!!!!')
+        print(c.orange + ' SNAAAAAAAAAAAAAAAAAAAAAAAKE!!!!!')
+        print(c.yellow + ' SNAAAAAAAAAAAAAAAAAAAAAAAKE!!!!!')
+        print(c.green +  'SNAAAAAAAAAAAAAAAAAAAAAAAKE!!!!!')
+    
     print(c.clear)
-
-    print('SNAAAAAAAAAAAAAAAAAAKE!!!')
-    time.sleep(0.5)
+    time.sleep(0.5)  
