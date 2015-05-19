@@ -20,7 +20,7 @@ while True:
     print(minutes)
     print(c.blue + 'seconds: ' + c.reset)
     print(seconds)
-    print(c.purple + 'hundredths: ' + c.reset)
+    print(c.magenta + 'hundredths: ' + c.reset)
     print(hundredths)
 
 

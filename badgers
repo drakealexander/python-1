@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+import colors as c
+import time
+print(c.clear)
+while True:
+    for count in range(12):
+        print('Badgers! ')
+        time.sleep(0.5)
+    for count1 in range(2):
+        print('Mushroom')
+        time.sleep(0.5)
+    print(c.clear)
+    for count in range(12):
+        print('Badgers! ')
+        time.sleep(0.5)
+    for count1 in range(2):
+        print('Mushroom')
+        time.sleep(0.5)
+    print(c.clear)
+    for count in range(12):
+        print('Badgers! ')
+        time.sleep(0.5)
+    for count1 in range(2):
+        print('Mushroom')
+        time.sleep(0.5)
+    print(c.clear)
+
+    print('SNAAAAAAAAAAAAAAAAAAKE!!!')
+    time.sleep(0.5)
