@@ -2,31 +2,29 @@
 import colors as c
 import time
 print(c.clear)
+snake = '''
+SNAAAAAAAAAAAAAAAAAAAAAAAKE!!!!!
+SNAAAAAAAAAAAAAAAAAAAAAAAKE!!!!!
+SNAAAAAAAAAAAAAAAAAAAAAAAKE!!!!!
+'''
 while True:
-    for count in range(12):
-        print(c.red + 'Badgers! ')
-        time.sleep(0.3)
-    for count1 in range(2):
-        print(c.orange + 'Mushroom')
-        time.sleep(0.8)    
-    print(c.clear)
-    for count in range(12):
-        print(c.yellow + 'Badgers! ')
-        time.sleep(0.3)
-    for count1 in range(2):
-        print(c.green + 'Mushroom')
-        time.sleep(0.8)
-    print(c.clear)
-    for count in range(12):
-        print(c.blue + 'Badgers! ')
-        time.sleep(0.3)
-    for count1 in range(2):
-        print(c.violet + 'Mushroom')
-        time.sleep(0.8)
-        print(c.red + 'SNAAAAAAAAAAAAAAAAAAAAAAAKE!!!!!')
-        print(c.orange + ' SNAAAAAAAAAAAAAAAAAAAAAAAKE!!!!!')
-        print(c.yellow + ' SNAAAAAAAAAAAAAAAAAAAAAAAKE!!!!!')
-        print(c.green +  'SNAAAAAAAAAAAAAAAAAAAAAAAKE!!!!!')
+    for verse in range(4):
+        for count in range(12):
+            print(c.red + 'Badgers! ')
+            time.sleep(0.3)
+        print(c.reset)
+        if verse > 3:
+            for count1 in range(2):
+                print(c.orange + 'SNAAAAAAAAAAAAAAAAAAAAKE')
+                time.sleep(0.75)
+                print(c.reset)
+        if verse < 3:
+            for count in range(2):
+                print(c.orange + 'Mushroom')
+                time.sleep(0.75)
+                print(c.reset)
+
+        print(c.reset)
+    print(snake)
     
-    print(c.clear)
-    time.sleep(0.5)  
+      
