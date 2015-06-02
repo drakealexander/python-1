@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+import time
+import colors as c
+while True:
+    print(c.clear)
+    print(c.reset)
+
+    print(c.yellow + '''Who would cross the bridge of Death
+    Must answer me these questions three
+    'Ere the other side he see.''')
+    print(c.reset)
+    time.sleep(1)
+
+    def prompt(question):
+        print(question)
+        answer = input('> ') + c.base3
+        print(c.reset)
+        return answer
+
+    name = prompt('What is thou name?')
+
+    print('Alrighty thou, time fou thou second question...')
+      
+    quest = prompt('What is thou quest..? ')
+        
+    if 'to seek the holy grail' in quest:
+        print('ok then')
+        time.sleep(1)
+        print('just kidding, GO DIE IN THOU HOLE!')
+        break
+    else:
+        print('ok thou...')
+
+    if name == 'lancelot' or name == 'galahead':
+        print('Ok, so whats thou favorite colour?')
+        color = prompt('> ')
+        time.sleep(1)
+        print('Ok, cross thou bridge... ')
+    
+    elif name == 'drake':
+        for count in range(3):
+            print('...')
+            time.sleep(1)
+            print('NIAAAAAAAAAAAAAN!!!')
+
+    print('ok then, what is thou favorite colour?')
+    colour = prompt('> ')
+    if name == 'lancelot' or name == 'galahead':
+        break
+    else:
+        print('Ok, cross thou bridge!!!')
