@@ -1,51 +1,68 @@
 #!/usr/bin/env python3
 import time
 import colors as c
+
+def prompt(question):
+    print(question)
+    answer = input('> ' + c.base3).strip().lower()
+    print(c.reset)
+    return answer
+
+def die():
+    print('sorry, you have died...')
+
+def live():
+    print('ok, you can cross...')
+
 while True:
     print(c.clear)
-    print(c.reset)
-
+    
     print(c.yellow + '''Who would cross the bridge of Death
     Must answer me these questions three
     'Ere the other side he see.''')
     print(c.reset)
     time.sleep(1)
 
-    def prompt(question):
-        print(question)
-        answer = input('> ') + c.base3
-        print(c.reset)
-        return answer
+    name = prompt(c.red + 'What is thou name?' + c.reset)
 
-    name = prompt('What is thou name?')
-
-    print('Alrighty thou, time fou thou second question...')
+    print(c.red + 'Alrighty thou, time fou thou second question...'+ c.reset)
       
-    quest = prompt('What is thou quest..? ')
-        
-    if 'to seek the holy grail' in quest:
-        print('ok then')
+    quest = prompt(c.red + 'What is thou quest..? '+ c.reset)
+    if quest == 'eat bob':
+        print('Wait what!? Das messed up bra, of thou go')
         time.sleep(1)
-        print('just kidding, GO DIE IN THOU HOLE!')
-        break
+        die()
+    
     else:
-        print('ok thou...')
+        print(c.red + 'ok thou...'+ c.reset)
 
-    if name == 'lancelot' or name == 'galahead':
-        print('Ok, so whats thou favorite colour?')
+    if name == 'arthur':
+        
+        print(c.red + 'What is the air speed velocity of an unladen swallow?'+ c.reset)
+        speed = prompt('> ')
+        if speed == '24':
+            live()
+            break
+        elif 'what do you mean' in speed:
+            print(c.red + 'The bridge keeper has died... you may now cross...'+ c.reset)
+            time.sleep(1)
+            live()
+            break
+        else:
+            print(c.red + 'NOPE!!!! OF THOU GO!!'+ c.reset)
+            die()
+            break
+            
+    elif name == 'lancelot' or name == 'galahad':
+        print(c.red + 'Ok, so whats thou favorite colour?'+ c.reset)
         color = prompt('> ')
         time.sleep(1)
-        print('Ok, cross thou bridge... ')
+        live()
+        break    
     
-    elif name == 'drake':
-        for count in range(3):
-            print('...')
-            time.sleep(1)
-            print('NIAAAAAAAAAAAAAN!!!')
-
-    print('ok then, what is thou favorite colour?')
-    colour = prompt('> ')
-    if name == 'lancelot' or name == 'galahead':
-        break
+    
+    
     else:
-        print('Ok, cross thou bridge!!!')
+        print(c.red + 'ok then, what is thou favorite colour?')
+        colour = prompt('> ')
+        live()
