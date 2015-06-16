@@ -3,29 +3,36 @@
 import random
 import time
 import colors as c
-from utils import ask
+from util import ask
 
 print(c.clear + c.magenta + 'Welcome to the Pink Fluffy Unicorns Quiz!')
 time.sleep(0.5)
 print(c.magenta + 'Lets see what you know about this...')
 
 def q1():
+    print(c.reset)
     answer = ask("What color are the unicorns?")
     if answer == 'pink':
         return True
     return False
     
 def q2():
+    print(c.reset)
     answer = ask("Where are they dancing?")
-    if answer.start("rainbow"):
+    if answer.startswith("rainbow"):
         return True
     return False
 
 def q3():
-    answer = ask("Please use one word to describethe texture of their magical fur:")
+    print(c.reset)
+    answer = ask("Please use one word to describe the texture of their magical fur:")
     if answer.startswith("smile"):
         return True
     return False
     
         
+questions = [q1,q2,q3]
+
+questions[0]()
+
 
