@@ -1,38 +1,41 @@
-#!/usr/bin/env python3
 
-import random
-import time
+
+
+
 import colors as c
 from util import ask
 
-print(c.clear + c.magenta + 'Welcome to the Pink Fluffy Unicorns Quiz!')
-time.sleep(0.5)
-print(c.magenta + 'Lets see what you know about this...')
+intro = c.magenta + '''Welcome to the Pink Fluffy Unicorns Quiz!''' + c.reset
+
+
 
 def q1():
     print(c.reset)
     answer = ask("What color are the unicorns?")
     if answer == 'pink':
+        print(c.base3 + ":)")
         return True
+    print(c.base3 + ":(")
     return False
-    
 def q2():
     print(c.reset)
     answer = ask("Where are they dancing?")
     if answer.startswith("rainbow"):
+        print(c.base3 + ":)")
         return True
-    return False
-
+    print(c.base3  + ":(")
+    return  False    
 def q3():
     print(c.reset)
     answer = ask("Please use one word to describe the texture of their magical fur:")
     if answer.startswith("smile"):
+        print(c.base3 + ":)")
         return True
+    print(c.base3 + ":(")
     return False
-    
         
 questions = [q1,q2,q3]
 
-questions[0]()
+
 
 
