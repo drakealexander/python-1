@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
-
+#import pfudor as quiz
 import colors as c
-import pfudor as quiz
-import random
-
+import my_quiz as quiz
 print(c.clear)
 print(quiz.intro)
 while quiz.questions:
