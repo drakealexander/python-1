@@ -2,11 +2,14 @@
 
 import colors as c
 import pfudor as quiz
+import random
 
 print(c.clear)
 print(quiz.intro)
+while quiz.questions:
+    question_function = random.choice(quiz.questions)
+    is_correct = question_function()
+    if is_correct:
+        quiz.questions.remove(question_function)
 
-quiz.q1()
-quiz.q2()
-quiz.q3()
 
