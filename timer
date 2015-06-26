@@ -8,7 +8,7 @@ hours = 0
 minutes = 0
 seconds = 0
 hundredths = 0
-
+print(c.reset)
 while True:
     print(c.red + 'weeks: ' + c.reset)
     print(weeks)
@@ -22,7 +22,11 @@ while True:
     print(seconds)
     print(c.magenta + 'hundredths: ' + c.reset)
     print(hundredths)
-
+    
+    print(c.reset)
+    print(c.reset)
+    print(c.reset)
+    print(c.reset)
 
     time.sleep(0.01)
     hundredths += 1
