@@ -1,41 +1,52 @@
 """my quiz"""
 
 import colors as c
-import utils as ask
+from util import ask
+intro = c.base3 + """Welcome To Drake's Quiz...""" + c.reset 
 
 def q1():
     print(c.reset)
-    answer = ask('How old is Drake Griffith?')
+    answer = ask(c.red + 'How old is Drake Griffith?')
     if answer == '12':
+        print(c.base3 + ':)')
         return True
+    print(c.base3 + ':(')
     return False
 
 def q2():
     print(c.reset)
-    answer = ask("What is Drake's Favorite Subject in School?")
+    answer = ask(c.blue + "What is Drake's Favorite Subject in School?")
     if answer == 'math':
+        print(c.base3 + ':)')
         return True
+    print(c.base3 + ':(')
     return False
 
 def q3():
     print(c.reset)
-    answer = ask("What is Drake's favorite number?")
+    answer = ask(c.base3 + "What is Drake's favorite number?")
     if answer == '1738' or answer == '819':
+        print(c.base3 + ':)')
         return True
+    print(c.base3 + ':(')
     return False
 
-def q4()
+def q4():
     print(c.reset)
-    answer = ask("What is my favorite TV show?")
-    if answer == 'spongebob' or answer == 'family guy':
+    answer = ask(c.red + "What is my favorite TV show?")
+    if answer == 'spongebob' or answer == 'family guy' or answer == 'south park':
+        print(c.base3 + ':)')
         return True
+    print(c.base3 +':(')
     return False
 
-def q5()
+def q5():
     print(c.reset)
-    answer = ask("What are some of Drake's best friends")
+    answer = ask(c.blue + "What are some of Drake's best friends")
     if answer == 'josh' or answer == 'evan' or answer == 'michael' or answer == 'jake':
+        print(c.base3 + ':)')
         return True
+    print(c.base3 + ':(')
     return False
 
 
