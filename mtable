@@ -3,6 +3,8 @@
 
 import colors as c
 import time
+
+print(c.clear)
 print(c.reset)
 b = c.base3
 r = c.reset
@@ -17,5 +19,6 @@ for times in range(1, 100000000000000001 ):
     answer = times * int(number)
     form = b + '{}' + r + ' x ' + b + '{}' + r + ' = ' + b + '{}'
     print(form.format(number,times,answer))
-    time.sleep(1)
+    ######Can be changed:
+    time.sleep(0.25)
 

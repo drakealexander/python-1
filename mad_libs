@@ -4,25 +4,26 @@ import colors as c
 from util import ask
 
 text = '''
-Once upon a time, there was a {noun1} named {name}, now he wasn't just any type 
-of {noun1}, he was a special breed of them called the {plural1}. Now this breed
+Once upon a time, there was a {noun1} named {name}, now {gender} wasn't just any type 
+of {noun1}, {gender} was a special breed of them called the {plural1}. Now this breed
 went on many adventures with {famous_person}, and also they would explore the deep 
 parts of the {specific_place}, which was very dangerous since there are {robotic_machine}'s
 inside, and there was the leader named {name2}. So after a while in the year {year},
 the hero named {name} was born! And changed the whole tribe of the {plural1}! But one
-day, something happened, an {natural_disaster} have come! And {name} died. So in the end,
+day, something happened, a {natural_disaster} have come! And {name} died. So in the end,
 the hero {name} saved the day from the evil {name2},.The tribe was very {emotion}, since he died.
-But the tribe shall always remember him from the {noun2} they had from him... 
+But the tribe shall always remember {name} from the {noun2} they had from him... 
 '''
 
 
 words = {
+    "gender" : {"desc": "gender (he, or she)"},
     "noun1" : {},
     "name" : {},
     "plural1" : {},
     "famous_person" : {},
     "specific_place" : {},
-    "robotic_machine" : {"desc": "bot killer (like turret)"},
+    "robot" : {"desc": "robot (like turret)"},
     "name2" : {},
     "year" : {},
     "natural_disaster" : {},
