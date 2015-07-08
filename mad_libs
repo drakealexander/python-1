@@ -7,7 +7,7 @@ text = '''
 Once upon a time, there was a {noun1} named {name}, now {gender} wasn't just any type 
 of {noun1}, {gender} was a special breed of them called the {plural1}. Now this breed
 went on many adventures with {famous_person}, and also they would explore the deep 
-parts of the {specific_place}, which was very dangerous since there are {robotic_machine}'s
+parts of the {specific_place}, which was very dangerous since there are {robot}'s
 inside, and there was the leader named {name2}. So after a while in the year {year},
 the hero named {name} was born! And changed the whole tribe of the {plural1}! But one
 day, something happened, a {natural_disaster} have come! And {name} died. So in the end,
