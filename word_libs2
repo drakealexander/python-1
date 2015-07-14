@@ -20,7 +20,7 @@ the game, which made him very {emotion2}. So in the end. {name1} {verb5} and fin
 The {time5}.
 '''
 
-print(text)
+
 
 
 words = {
@@ -54,6 +54,6 @@ words = {
 }
 
 for keyword in words:
-    words[keyword] = ask(keyword.rstrip('0123456789') + ': '))
+    words[keyword] = ask(keyword.rstrip('0123456789') + ': ')
 
 print(c.clear + text.format(**words))
