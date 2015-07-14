@@ -1,0 +1,59 @@
+#!/usr/bin/env python3
+
+import colors as c 
+from util import ask
+
+print(c.clear + c.yellow + '''
+Welcome To Word Libs...
+''' + c.reset )
+text = '''
+    Alright, im finally at level {number1}! {name1} said. It sure did take a good {number2}
+{time1_days}'s, but its all finally over... Wait a {time2_seconds}! I forgot there are {number3}
+more levels in the game... That makes me {emotion} and wanna go {verb1} around with a {noun1} 
+on my {body_part1} and {verb2} of a {noun2}!!But then, {name2} {verb3}ed on {name1}'s head which made 
+him faint...
+    {number3} {time3_seconds_days} later...
+{name1} woke up and found that he was in the {noun3} and was going to be {life_or_death1} in {number4} {time4_seconds_days}'s...
+so he had to make the last few {time5_seconds_days}'s count! So at {time_of_day1}, he {verb4} to his house and finally {won_or_lost1}
+the game, which made him very {emotion2}. So in the end. {name1} {verb5} and finally {won_or_lost1} the game...
+
+The {time5}.
+'''
+
+print(text)
+
+
+words = {
+    "number1" : None, 
+    "name1" : None,
+    "number2" : None, 
+    "time1_days" : None, 
+    "time2_seconds" : None, 
+    "number3" : None, 
+    "emotion" : None,
+    "verb1" : None, 
+    "noun1" : None, 
+    "body_part1" : None, 
+    "verb2" : None,
+    "noun2" : None,
+    "name2" : None, 
+    "verb3" : None, 
+    "number3" : None,
+    "time3_seconds_days" : None,
+    "noun3" : None, 
+    "life_or_death1" : None,  
+    "number4" : None,
+    "time4_seconds_days" : None, 
+    "time5_seconds_days" : None, 
+    "time_of_day1" : None,
+    "verb4" : None, 
+    "won_or_lost1" : None, 
+    "emotion2" : None, 
+    "verb5" : None,
+    "time5" : None,
+}
+
+for keyword in words:
+    words[keyword] = ask(keyword.rstrip('0123456789') + ': '))
+
+print(c.clear + text.format(**words))
