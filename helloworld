@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+
+
+print(c.red + 'H' + c.orange + 'e' + c.yellow + 'l' + c.green +'l' + c.blue +'o' + c.red + ' W' + c.magenta + 'o' + c.violet + 'r' + c.yellow + 'l' + c.green + 'd' + c.red + '!')

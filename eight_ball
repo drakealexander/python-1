@@ -1,0 +1,42 @@
+#!/usr/bin/env python3
+import colors as c
+import random
+print(c.red + 'This is my eight ball')
+while True:
+    answer = [
+        'yes',
+        'no',
+        'mabye',
+        'signs point to no',
+        'signs point to yes',
+        'NEVER ASK THAT EVER AGAIN!!',
+        'dats nasty... ',
+        'cannot answer question, try again.. ',
+        '....',
+        'its possible',
+        'nope',
+        'never.....gonna.....HAPPEN',
+        'impossible',
+        'definitly',
+        'GO DIE IN A HOLE',
+        'BURN IN ----',
+        'GET OF THIS COMPUTER AND PLAY OUTSIDE...',
+        'yes',
+        'no',
+        'of course not'
+        'totally',
+]
+    
+    question = input(c.yellow + '> ').strip().lower()
+    if 'love' in question:
+        print('...')
+    if 'death' in question:
+        print('dont talk about death!!')
+    if 'die' in question:
+        print('NO!!!')
+    if 'bye' in question:
+        print('ok...')
+        break
+    answe = random.choice(answer)
+    print(c.cyan + answe)
+

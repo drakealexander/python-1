@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+
+import random
+import colors as c
+
+yellow = '\033[0;33m' 
+red = '\033[0;31m'
+orange = '\033[1;31m'
+green = '\033[0;32m' 
+blue = '\033[0;34m'
+purple = '\033[1;35m'
+reset = '\033[0m'
+colors = [
+    yellow,
+    red,
+    orange,
+    green,
+    blue,
+    purple,
+]
+while True:
+    print(random.choice(colors) + 'h' + reset, end='')
+    print(random.choice(colors) + 'e' + reset, end='')
+    print(random.choice(colors) + 'l' + reset, end='')
+    print(random.choice(colors) + 'l' + reset, end='')
+    print(random.choice(colors) + 'o' + reset, end='')
+    print(random.choice(colors) + '_' + reset, end='')
+    print(random.choice(colors) + 'w' + reset, end='')
+    print(random.choice(colors) + 'o' + reset, end='')
+    print(random.choice(colors) + 'r' + reset, end='')
+    print(random.choice(colors) + 'l' + reset, end='')
+    print(random.choice(colors) + 'd' + reset, end='')
+    print(random.choice(colors) + '!' + reset, end='')
+
