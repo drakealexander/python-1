@@ -5,13 +5,13 @@ import colors as c
 while True:
     print(c.clear) 
     print(c.yellow + 'Do you like waffles?' + c.reset)
-    waffles = input('> ').strip().lower()
+    waffles = input(c.base3 + '> ').strip().lower()
     if 'y' in waffles:
         print(c.blue + 'Do you like pancakes?' + c.reset)
-        pancakes = input('> ').strip().lower()
+        pancakes = input(c.base3 + '> ').strip().lower()
         if 'y' in pancakes:
             print(c.red + 'Do you like French Toast?' + c.reset)
-            toast = input('> ').strip().lower()
+            toast = input(c.base3 + '> ').strip().lower()
             if 'y' in toast:
                 print(c.green + "Do do da do, can't wait to get a mouthful!" + c.reset)
                 break
