@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+
+import colors as c
+
+import random
+
+print(c.clear)
+print(c.reset)
+
+dice =  ["1", "2", "3", "4", "5", "6"]
+try:
+    while True:
+    
+        go = input(c.green + 'go agian? ').strip().lower()
+        if 'y' in go:
+            print(c.orange + 'rolled ' + random.choice(dice))
+    
+
+except KeyboardInterrupt:
+    exit()
+
