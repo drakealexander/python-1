@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+
+import colors as c
+import time
+
+print(c.red + 'H' + c.orange + 'e' + c.yellow + 'l' + c.green + 'l' + c.blue + 'o' + c.magenta + ', What is your name?')
+name = input('> ').strip().lower()
+
+print(c.red + 'Hola, ' + c.green + name)
+

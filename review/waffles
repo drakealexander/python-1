@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+
+import colors as c
+print(c.clear)
+print(c.reset)
+
+while True:
+    waffle = input(c.magenta + 'Do you like waffles? ').strip().lower()
+    print(c.reset)
+    if 'y' in waffle: 
+        pancake = input(c.blue + 'Do you like pancakes? ').strip().lower()
+        print(c.reset)
+        if 'y' in pancake:
+            toast = input(c.green + 'Do you like french toast? ').strip().lower()
+            print(c.reset)
+            if 'y' in toast:
+                print(c.orange + "Do da do da can't wait to get a mouthful! ")
+                print(c.reset)
+                break    
+    if 'n' in waffle:
+        print(c.red + 'Well I DO!!')
+        break
+    if 'n' in pancake:
+        print(c.base3 + 'Well I DO!!!')
+        break   
+    if 'n' in toast:
+        print(c.blue + 'Well I DO!!!')
+        break    
+            
