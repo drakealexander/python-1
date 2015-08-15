@@ -1,0 +1,20 @@
+#!/usr/bin/env python3
+
+import random
+import colors as c
+print(c.clear)
+print(c.reset)
+
+questions = [
+  'yes',
+  'no',
+  'mabye',
+]
+
+while True:
+    print('What Is Your Question?')
+    question = input('> ')
+
+    ask = random.choice(questions)
+
+    print(c.yellow + ask)
