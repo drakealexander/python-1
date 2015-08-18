@@ -1,0 +1,27 @@
+#!/usr/bin/env python3
+
+import colors as c
+import time
+import random
+from utils import ask
+
+text = '''
+
+One Day there was a {noun} and I {verb}ed on it and died.
+'''
+
+lines = text.splitlines()
+title = lines[0]
+text  = "\n".join(lines[1:])
+
+words = {
+    "noun" : None,
+    "verb" : None
+}
+
+for key in words:
+    words[key] = ask(key + ': ')
+
+print(c.clear + c.base3 + title + c.reset)
+print(text.format(**words))
+
