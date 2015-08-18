@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+
+import colors as c
+import time
+b = c.base3
+r = c.reset
+
+print(c.reset)
+print(c.clear)
+
+print('Pick a number')
+time.sleep(1)
+number = input('> ')
+time.sleep(1)
+print('Table for {}:'.format(number))
+    
+for times in range(1, 100000000000000001 ):
+    solve = times * int(number)
+    form = b + '{}' + r + ' x ' + b + '{}' + r + ' = ' + b + '{}'
+    print(form.format(number,times,solve))
+    #Can be changed
+    time.sleep(0.65)
+
