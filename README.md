@@ -3,4 +3,3 @@ Python for more advanced users.
 
 F
 G
-G
